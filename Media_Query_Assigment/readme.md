@@ -12,14 +12,14 @@
 
 ## Screen size : 1024px
 
-<img src="./images/screen_3.png" alt="screen_size_1024px">
+<img src="./images/screen_3.png" alt="screen_size_1024px" width="1024px">
 
 
 ## Screen size : 768px
 
-<img src="./images/screen_4.png" alt="screen_size_768px">
+<img src="./images/screen_4.png" alt="screen_size_768px" width="768px">
 
 
 ## Screen size : 425px
 
-<img src="./images/screen_5.png" alt="screen_size_425px">
+<img src="./images/screen_5.png" alt="screen_size_425px" width="425px">
