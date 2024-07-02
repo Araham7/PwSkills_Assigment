@@ -7,7 +7,7 @@
 
 ## Screen size : 1440px
 
-<img src="./images/screen_2.png" alt="screen_size_1440px">
+<img src="./images/screen_2.png" alt="screen_size_1440px" width="1440px">
 
 
 ## Screen size : 1024px
