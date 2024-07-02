@@ -1,0 +1,56 @@
+*{
+    text-align: center;
+}
+
+body{
+    background-color: #f6f095;
+}
+div.container::after{
+    content: "Screen size : normal"
+}
+
+/* From 1440px to 1423px */
+@media (max-width:1440px) and (min-width:1023px){
+
+    body{
+        background-color: #208b21 ;
+    }
+
+    div.container::after{
+        content: "Screen size : 1440px" ;
+    }
+}
+
+/* from 1024px to 767px. */
+@media (max-width:1024px) and (min-width:767px){
+
+    body{
+        background-color: #b18730 ;
+    }
+
+    div.container::after{
+        content: "Screen size : 1024px" ;
+    }
+}
+
+/* from 768px to 424px. */
+@media (max-width:768px) and (min-width:424px){
+
+    body{
+        background-color: #0dc4c7 ;
+    }
+
+    div.container::after{
+        content: "Screen size : 768px" ;
+    }
+}
+
+/* from 425px to 0px */
+@media (max-width:425px) and (min-width:0px){
+    body{
+        background-color: #ca3143;
+    }
+    div.container::after{
+        content: "Screen size : 425px" ;
+    }
+}
