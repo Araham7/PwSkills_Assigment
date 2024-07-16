@@ -1,4 +1,4 @@
-# index.html :---
+# index.js :---
 ```index.html
 // Step 1: Import the events module
 const events = require('events');
