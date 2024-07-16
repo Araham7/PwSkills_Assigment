@@ -1,5 +1,5 @@
 # package.json :---
-```
+```package.json
   {
   "name": "assigment_1",
   "version": "1.0.0",
