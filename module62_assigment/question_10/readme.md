@@ -1,5 +1,5 @@
 # index.js :---
-```inde.js
+```index.js
   const EventEmitter = require("events");
 
 const eventEmitter = new EventEmitter();
@@ -23,4 +23,4 @@ console.log(`The updated maximum number of event listeners are: ${eventEmitter.g
 ```
 
 # OUTPUT :---
-<img src="Assigment_10.png" alt="OUTPUT OF Assigment 10" title="Assigment 10 photo">
+<img src="./Assigment_10.png" alt="OUTPUT OF Assigment 10" title="Assigment 10 photo">
