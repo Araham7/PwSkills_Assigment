@@ -1,5 +1,5 @@
 # index.js :---
-```inde.js
+```index.js
 const fs = require('fs');
 const os = require('os');
 
