@@ -30,8 +30,8 @@ Node.js is a platform that utilizes JavaScript and is primarily employed for dev
 ```
 
 
-# before_modification(before running the code) :---
+# Before_modification(before running the code) :---
 <img src="Assigment_4_before_modification.png" alt="OUTPUT before running the code" title="Assigment_4_before_modification.png">
 
-# after_modification(after running the code) :---
+# After_modification(after running the code) :---
 <img src="Assigment_4_after_modification.png" alt="OUTPUTafter running the code" title="Assigment_4_after_modification.png">
