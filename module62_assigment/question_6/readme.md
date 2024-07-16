@@ -12,5 +12,5 @@ console.log("OS release : " , os.release());
 ```
 
 
-# before_modification(before running the code) :---
+# OUTPUT :---
 <img src="Assigment_6.png" alt="OUTPUT" title="Assigment_6_Output">
