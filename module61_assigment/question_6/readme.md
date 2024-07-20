@@ -14,3 +14,6 @@ console.log("OS release : " , os.release());
 
 # OUTPUT :---
 <img src="Assigment_6.png" alt="OUTPUT" title="Assigment_6_Output">
+
+
+
