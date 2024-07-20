@@ -8,9 +8,7 @@ This project is a simple Express.js server that handles basic routing and respon
 ## Getting Started
 
 1. **Clone or download the repository** (if applicable).
-
-2. **Install Dependencies**:
-###Ensure you have Express installed. You can install it using npm:
+     -Ensure you have Express installed. You can install it using npm:
      ```bash
      npm install express
      ```
