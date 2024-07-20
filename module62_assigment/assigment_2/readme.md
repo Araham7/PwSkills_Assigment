@@ -1,74 +1,71 @@
-# Node.js HTTP Server for Dummy Product Data
+# Node.js Express Server with Counter Functionality
 
-This Node.js script sets up a simple HTTP server that serves dummy data for men and women products. The server listens on port 9600 and provides different endpoints to retrieve this data.
+This Node.js script sets up an Express server that provides endpoints for managing a counter. The server listens on port 7354 and includes routes to get the current counter value, increment and decrement the counter, and handle 404 errors.
 
 ## Prerequisites
 
-- Node.js installed on your machine.
+- Node.js and npm installed on your machine.
 
 ## Getting Started
 
 1. **Clone or download the repository** (if applicable).
 
-2. **Install Dependencies**: No external dependencies are required for this script. Ensure you have Node.js installed.
+2. **Install Dependencies**:
+   - Ensure you have Express installed. You can install it using npm:
+     ```bash
+     npm install express
+     ```
 
 3. **Run the Server**:
    ```bash
-   node assigment_1.js
-
+   node assigment_2.js
 
 # assigment_1.js :---
 ```javaScript
 
-const http = require('http');
-const PORT = 9600;
-const HOSTNAME = "localhost";
+const express = require('express');
+const HOSTNAME = 'localhost';
+const PORT = 7354;
 
-// Sample data for men and women products
-const menProducts = [
-    { id: '1', name: "Men's T-Shirt", brand: "ABC", price: 19.99, color: "Blue", size: "M", category: "Clothing" },
-    { id: '2', name: "Men's Jeans", brand: "XYZ", price: 39.99, color: "Black", size: "L", category: "Clothing" },
-    // Add more products as needed (up to 10)
-];
+const app = express();
 
-const womenProducts = [
-    { id: '1', name: "Women's T-Shirt", brand: "DEF", price: 18.99, color: "Red", size: "S", category: "Clothing" },
-    { id: '2', name: "Women's Jeans", brand: "GHI", price: 35.99, color: "White", size: "M", category: "Clothing" },
-    // Add more products as needed (up to 10)
-];
+let counter = 0;
 
-const server = http.createServer((req, res) => {
-    if (req.url === '/') {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.write(JSON.stringify({ msg: "Welcome to Men & Women Dummy Data!" }));
-        res.end();
-    } else if (req.url === '/men') {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.write(JSON.stringify({ menProducts }));
-        res.end();
-    } else if (req.url === '/women') {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'application/json');
-        res.write(JSON.stringify({ womenProducts }));
-        res.end();
-    } else {
-        res.statusCode = 404;
-        res.setHeader('Content-Type', 'text/plain');
-        res.write("Page not found!");
-        res.end();
-    }
+app.get('/', (req, res) => {
+    res.status(200);
+    res.set('Content-Type', 'application/json');
+    res.json({ counter });
 });
 
-server.listen(PORT, () => {
+app.get('/increment', (req, res) => {
+    res.status(200);
+    res.set('Content-Type', 'application/json');
+    counter += 1;
+    res.json({ counter });
+});
+
+app.get('/decrement', (req, res) => {
+    res.status(200);
+    res.set('Content-Type', 'application/json');
+    counter -= 1;
+    res.json({ counter });
+});
+
+app.get('*', (req, res) => {
+    res.status(404);
+    res.set('Content-Type', 'text/plain');
+    res.send("Page not found!");
+});
+
+app.listen(PORT, () => {
     console.log(`Server is running at > ${HOSTNAME}:${PORT}`);
 });
+
 
 ```
 
 # Access the Server:
 ### Open your web browser or a tool like curl or Postman and navigate to:
-   * http://localhost:9600/ to see a welcome message.
-   * http://localhost:9600/men to retrieve the list of men's products.
-   * http://localhost:9600/women to retrieve the list of women's products.
+   * http://localhost:7354/ to see the current counter value.
+   * http://localhost:7354/increment to increment the counter.
+   * http://localhost:7354/decrement to decrement the counter.
