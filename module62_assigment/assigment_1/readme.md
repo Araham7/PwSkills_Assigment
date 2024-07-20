@@ -14,7 +14,7 @@ This Node.js script sets up a simple HTTP server that serves dummy data for men 
 
 3. **Run the Server**:
    ```bash
-   node server.js
+   node assigment_1.js
 
 
 # assigment_1.js :---
