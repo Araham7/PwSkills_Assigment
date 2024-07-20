@@ -21,45 +21,40 @@ A simple Express.js server that provides basic routing, responds with plain text
 
 const express = require('express');
 
-const PORT = 3698 ;
+const PORT = 4569 ;
 const HOSTNAME = 'localhost' ;
 
 const app = express();
 
-// home
-app.get('/' , (req , res)=>{
+// Function to generate a random integer between 0 and 100 (inclusive) :---
+let randomNum = ()=>{
+    return (Math.floor(Math.random()*101));
+}
+
+// Home page :---
+app.get('/',(req , res)=>{
+    res.status(200);
+    res.header('content-type' , 'text/plain');
+    res.send('This is home Page.');
+})
+
+// '/random' :---
+app.get('/random',(req , res)=>{
     res.status(200);
     res.header('content-type' , 'application/json');
-    // res.set('content-type' , 'application/json');
-    res.json({msg:`I am home page`});
+    random = randomNum();
+    res.json({random});
 });
 
-// about
-app.get('/about' , (req , res)=>{
-    res.status(200);
-    res.header('content-type' , 'application/json');
-    // res.set('content-type' , 'application/json');
-    res.json({msg:`I am about page`});
-});
-
-// contact
-app.get('/contact' , (req , res)=>{
-    res.status(200);
-    res.header('content-type' , 'application/json');
-    // res.set('content-type' , 'application/json');
-    res.json({email:`support@pwskills.com`});
-});
-
-app.get('*' , (req , res)=>{
+app.get('*',(req , res)=>{
     res.status(404);
     res.header('content-type' , 'text/plain');
-    // res.set('content-type' , 'text/plain');
-    res.send("Page not found !");
+    res.send('Page not found!');
 });
 
 app.listen(PORT , ()=>{
-    console.log(`Server is running @ > ${HOSTNAME}:${PORT}`);
-})
+    console.log(`Server is running at > ${HOSTNAME}:${PORT}`);
+});
 
 ```
 
