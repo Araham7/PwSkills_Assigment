@@ -60,7 +60,6 @@ app.listen(PORT , ()=>{
 
 # Access the Server:
 ### Open your web browser or a tool like curl or Postman and navigate to:
-   * `http://localhost:/`: Returns a JSON response with a message indicating the home page.
-   * `http://localhost:/about` : Returns a JSON response with a message indicating the about page.
-   * `http://localhost:7354/contact` : Returns a JSON response with an email address for support.
-   * `http://localhost:7354/*` : Handles all other routes with a 404 response and a plain text message indicating the page was not found.
+   *`http://localhost:4569/` : Returns a plain text message indicating the home page.
+   * `http://localhost:4569/random` :  Returns a JSON object with a random number between 0 and 100 (inclusive).
+   * `http://localhost:4569/*` : Handles all other routes with a 404 response.
