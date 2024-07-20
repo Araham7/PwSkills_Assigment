@@ -65,5 +65,10 @@ server.listen(PORT, () => {
     console.log(`Server is running at > ${HOSTNAME}:${PORT}`);
 });
 
-
 ```
+
+# Access the Server:
+### Open your web browser or a tool like curl or Postman and navigate to:
+   * http://localhost:9600/ to see a welcome message.
+   * http://localhost:9600/men to retrieve the list of men's products.
+   * http://localhost:9600/women to retrieve the list of women's products.
