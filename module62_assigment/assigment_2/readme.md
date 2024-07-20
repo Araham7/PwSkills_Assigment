@@ -66,6 +66,6 @@ app.listen(PORT, () => {
 
 # Access the Server:
 ### Open your web browser or a tool like curl or Postman and navigate to:
-   * http://localhost:7354/ to see the current counter value.
-   * http://localhost:7354/increment to increment the counter.
-   * http://localhost:7354/decrement to decrement the counter.
+   * `http://localhost:7354/` : to see the current counter value.
+   * `http://localhost:7354/increment` : to increment the counter.
+   * `http://localhost:7354/decrement` : to decrement the counter.
