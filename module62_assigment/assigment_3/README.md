@@ -1,7 +1,6 @@
 # Node.js Express Server with Counter Functionality
 
-This Node.js script sets up an Express server that provides endpoints for managing a counter. The server listens on port 7354 and includes routes to get the current counter value, increment and decrement the counter, and handle 404 errors.
-
+This project is a simple Express.js server that handles basic routing and responds with JSON and plain text. It includes endpoints for home, about, and contact pages, along with a catch-all route for handling 404 errors.
 ## Prerequisites
 
 - Node.js and npm installed on your machine.
@@ -11,7 +10,7 @@ This Node.js script sets up an Express server that provides endpoints for managi
 1. **Clone or download the repository** (if applicable).
 
 2. **Install Dependencies**:
-   ###Ensure you have Express installed. You can install it using npm:
+###Ensure you have Express installed. You can install it using npm:
      ```bash
      npm install express
      ```
