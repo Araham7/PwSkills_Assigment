@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  },
+  "name": "assigment_4",
+  "version": "1.0.0",
+  "main": "assigment_4.js",
+  "devDependencies": {},
+  "scripts": {
+    "start":"nodemon assigment_4.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Araham Abeddin",
+  "license": "ISC",
+  "description": ""
+}
