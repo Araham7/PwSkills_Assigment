@@ -19,7 +19,7 @@ fs.unlink("nodejs_architecture.txt", (err) => {
 
 
 # Before_modification(before running the code) :---
-<img src="Assigment_5_before_deletion_of_file.png" alt="OUTPUT before running the code" title="Assigment_5_before_modification.png">
+<img src="./Assigment_5_before_deletion_of_file.png" alt="OUTPUT before running the code" title="Assigment_5_before_modification.png">
 
 # After_modification(after running the code) :---
 <img src="./Assigment_5_after_deletion_of_file.png" alt="OUTPUTafter running the code" title="Assigment_5_after_modification.png">
