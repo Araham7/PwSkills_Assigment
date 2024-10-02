@@ -1,0 +1,20 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+#display_txt {
+  color: rgba(71, 73, 63, 0.87);
+
+  font-size: 64px;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0ae9cb;
+}
