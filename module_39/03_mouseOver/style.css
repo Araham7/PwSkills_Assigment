@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0ae9cb;
+}
+
+#container{
+    width:300px;
+    background-color: rgb(134, 109, 54);
+    cursor: pointer;
+    color: blue;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 20px;
+}
