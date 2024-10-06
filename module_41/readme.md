@@ -175,7 +175,7 @@ The URL is valid.
 ```
 <hr>
 
-# Q.6). 
+# Q.6). LinkedIn Profile URL Validator: As a developer, you want to create a program that validates LinkedIn profile URLs to ensure that they are formatted correctly and contain only valid characters. Valid LinkedIn profile URLs should start with https://www.linkedin.com/in/ followed by a combination of one or more letters, digits, underscores, or hyphens, andend with a letter or digit. The length of the profile ID should be between 5 and 30 characters.The program should use a regular expression to match valid LinkedIn profile URLs, and should not match URLs that do not follow this format or contain invalid characters. The program should provide clear output messages indicating whether each input is a valid LinkedIn profile URL or not.
 
 ### Sol.
 ```Javascript 
@@ -219,3 +219,6 @@ The LinkedIn profile URL is invalid.
 The LinkedIn profile URL is invalid.
 The LinkedIn profile URL is invalid.
 ```
+
+
+
