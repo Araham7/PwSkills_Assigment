@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Highlighting</title>
+  <style>
+    *{
+      line-height: 20px;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <p id="myParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus voluptatem sint sapiente quo expedita, aliquid repellat harum neque assumenda, nemo vero dolorum recusandae dolor tempora in suscipit impedit, pariatur quidem. Voluptate porro magni dolores inventore pariatur earum necessitatibus harum eius doloremque iste illo, excepturi eligendi nam deserunt, praesentium delectus illum quasi quos deleniti in repellendus qui nostrum? Maxime delectus deleniti culpa exercitationem vel labore provident ab earum iste incidunt, quia sequi unde repellendus porro ipsa officiis est. Eligendi, explicabo error animi earum adipisci odio in nihil vero nisi cumque consequuntur molestias, deleniti inventore quae illo! Nostrum ducimus reiciendis minus sint excepturi, necessitatibus velit quas at corporis. Voluptate eos minima accusamus beatae. Ipsa itaque provident perferendis, repellendus nulla facilis earum sit laudantium blanditiis aperiam quo a praesentium corrupti expedita possimus magnam reprehenderit quaerat veritatis? Ipsa ut obcaecati eveniet repellendus rem enim exercitationem velit, cupiditate magnam fuga dicta aliquid magni voluptatum maiores deleniti ipsum esse aut veniam ratione dolor minus expedita. Architecto tenetur quas natus corrupti eaque vel, pariatur fugiat nobis earum nostrum aut laudantium assumenda sed optio soluta accusantium voluptatem dolores deleniti, voluptatum quod ab culpa incidunt corporis consectetur? Dignissimos officiis ipsum officia a ipsam nostrum corrupti assumenda, ullam minima dolore vitae, nam excepturi. Doloremque.</p>
+
+  <script>
+    let paragraphighliter = ()=>{
+    let paragraph = document.querySelector("#myParagraph");
+    let text = paragraph.textContent;
+    let words = text.split(' ');
+
+    let highlightedText = words.map((word)=>{
+        if (word.length > 8) {
+            return (`<span class="highlight">${word}</span>`) ;
+        }
+        return word
+    }).join(' ');
+    
+    paragraph.innerHTML = highlightedText;
+    }
+
+    paragraphighliter();
+  </script>
+</body>
+</html>
+
