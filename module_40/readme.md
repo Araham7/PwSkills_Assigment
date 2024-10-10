@@ -1261,7 +1261,7 @@ let counter = 0;
 <!-- ```Output -->
 ### solution_video:(click_on_the_image_to_view_the_video_solution)-
 <a href="https://youtube.com/shorts/ZysKqWVLbJY?si=2pdCvJJtRg768yBm">
-  <img src="https://img.youtube.com/vi/ZysKqWVLbJY/0.jpg" width="900px" height="550px" alt="Watch the video" title="Click on the image to view the video solution">
+  <img src="https://img.youtube.com/vi/ZysKqWVLbJY/0.jpg" height="400px" width="500px" alt="Watch the video" title="Click on the image to view the video solution">
 </a>
 <!-- ``` -->
 
@@ -1356,7 +1356,7 @@ btn.addEventListener("click" , function () {
 <!-- ```Output -->
 ### solution_video:(click_on_the_image_to_view_the_video_solution)-
 <a href="https://youtube.com/shorts/XjK3oGWsmE4?si=oTkmra3G-1hm9mX2">
-  <img src="https://img.youtube.com/vi/XjK3oGWsmE4/0.jpg" width="900px" height="550px" alt="Watch the video" title="Click on the image to view the video solution">
+  <img src="https://img.youtube.com/vi/XjK3oGWsmE4/0.jpg" height="400px" width="500px" alt="Watch the video" title="Click on the image to view the video solution">
 </a>
 <!-- ``` -->
 
@@ -1487,7 +1487,7 @@ btn.addEventListener("click" , function () {
 <!-- ```Output -->
 ### solution_video:(click_on_the_image_to_view_the_video_solution)
 <a href="https://youtu.be/I0oL_afU1Ys?si=pLnQlf3LsivXNFKC">
-  <img src="https://img.youtube.com/vi/I0oL_afU1Ys/0.jpg" width="900px" height="550px" alt="Watch the video" title="click_on_the_image_to_view_the_video_solution">
+  <img src="https://img.youtube.com/vi/I0oL_afU1Ys/0.jpg" height="500px" width="900px" alt="Watch the video" title="click_on_the_image_to_view_the_video_solution">
 </a>
 <!-- ``` -->
 
