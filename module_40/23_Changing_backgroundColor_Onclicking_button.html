@@ -1,0 +1,86 @@
+<!-- 
+
+# (Q.23). Change the color on click:
+
+## Create a button that utilizes an array of colors and the Math.random method to change the background color of the page upon clicking.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        button{
+            padding: 18px;
+            text-align: center;
+
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <button>
+        Click Me To Change bgc Color !
+    </button>
+
+    <script>
+        const btn = document.querySelector("button");
+        const body = document.querySelector("body");
+
+// any one of the below random color would be selected.
+        const color = [
+  '#49b011', '#4df158', '#ffd40c', '#26fd36',
+  '#4cfb58', '#54e101', '#0249eb', '#055051',
+  '#843fea', '#783bd7', '#6ef3f2', '#74424a',
+  '#0cc0b8', '#d3895d', '#a2336f', '#550c80',
+  '#50f624', '#0ea932', '#9c066e', '#21c9c6',
+  '#d97b52', '#a2fd24', '#497ea3', '#93aae6',
+  '#b55bdf', '#bec6f1', '#471c1f', '#83f069',
+  '#91e4cf', '#bc8a12', '#d0b1c1', '#f7198e',
+  '#f4bc50', '#577e3b', '#e49266', '#b48314',
+  '#74f29d', '#30b60f', '#cd9910', '#bf02d1',
+  '#88b052', '#951e06', '#3b0a38', '#a51d3a',
+  '#7c6a15', '#0d162f', '#313416', '#5977e0',
+  '#0e378f', '#844439', '#111226', '#6d4a1f',
+  '#d9f61c', '#3e1424', '#8ac5ff', '#dcfaaa',
+  '#eb345e', '#59781e', '#aa3b21', '#c33c4e',
+  '#e6060a', '#7692ab', '#581eb4', '#4a46e0'
+]
+
+// Function to pick random color for "color" array.
+let randomBcgColor = function () {
+        let bcgColor = color[Math.floor(Math.random()*color.length)]; 
+        return bcgColor;
+    }
+
+console.log(randomBcgColor()); // for debugging
+
+// Applying event listener on button.
+btn.addEventListener("click" , function () {
+        body.style.backgroundColor = randomBcgColor();
+    })
+
+    </script>
+</body>
+</html>

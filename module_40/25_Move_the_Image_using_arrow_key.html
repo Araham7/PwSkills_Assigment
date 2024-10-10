@@ -1,0 +1,68 @@
+<!-- 
+
+# (Q.25). Move the Image:
+
+## The objective is to write a JavaScript program that enables an image to move according to the direction specified by the arrow keys. The program must be able to recognize and respond to the input from the arrow keys, and accordingly, update the position of the image on the screen. The program should be able to handle the movement of the image in all directions, including up, down, left, and right, in a smooth and responsive manner. Have a look at the event key codes before starting the project.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move the Image</title>
+    
+    <style>
+        *{
+            background-color: rgb(231, 227, 222);
+        }
+        #movingImage {
+            position: absolute; /* Allows movement */
+            width: 100px; /* Set width */
+            height: auto; /* Maintain aspect ratio */
+
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <img id="movingImage" src="./drag_img.jpeg" alt="Moving Image">
+    <script>
+        const image = document.getElementById('movingImage');
+        let posX = 0; // Initial horizontal position
+        let posY = 0; // Initial vertical position
+        const step = 10; // Number of pixels to move
+
+        function moveImage(event) {
+            const imageRect = image.getBoundingClientRect(); // Get image dimensions
+            const viewportWidth = window.innerWidth; // Viewport width
+            const viewportHeight = window.innerHeight; // Viewport height
+
+            switch (event.keyCode) {
+                case 37: // Left arrow
+                    if (posX > 0) posX -= step; // Move left if within bounds
+                    break;
+                case 38: // Up arrow
+                    if (posY > 0) posY -= step; // Move up if within bounds
+                    break;
+                case 39: // Right arrow
+                    if (posX + imageRect.width < viewportWidth) posX += step; // Move right if within bounds
+                    break;
+                case 40: // Down arrow
+                    if (posY + imageRect.height < viewportHeight) posY += step; // Move down if within bounds
+                    break;
+            }
+
+            // Update image position
+            image.style.left = posX + 'px';
+            image.style.top = posY + 'px';
+        }
+
+        window.addEventListener('keydown', moveImage); // Listen for keydown events
+    </script>
+</body>
+</html>
+

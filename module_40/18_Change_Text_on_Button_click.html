@@ -1,0 +1,65 @@
+<!-- 
+# (Q.18). Change Text on Button click:
+
+## Create a simple HTML page with a heading and a button. The initial text must be “The most affordable learning platform”, use JavaScript to change the heading text to “PW Skills” when the button is clicked. The button must toggle the text of a heading between "The most affordable learning platform" and "PW Skills" on each click. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Text</title>
+
+    <style>
+        body{
+            background-color: burlywood;
+        }
+
+        #head-container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            width: 300px;
+            height: 10vh;
+            border: 2px solid #000000;
+            border-radius: 18px;
+            font-weight: 550;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #a88dc1;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="head-container">
+            <h1>
+                The most affordable learning platform
+            </h1>
+            <hr>
+            <button>
+                Click me to change above text!
+            </button>
+    </div>
+        <script>
+            let toggle = 0;
+            const btn = document.querySelector("button");
+            headingTxt = document.querySelector("h1");
+            btn.addEventListener("click", ()=>{
+                toggle = (toggle === 0) ? 1 : 0;
+                console.log(toggle);
+                if (toggle === 1) {
+                    headingTxt.innerHTML = "PW Skills";
+                } else {
+                    headingTxt.innerHTML = "The most affordable learning platform";
+                }
+            })
+        </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!-- 
+
+# (Q.20). Dynamically Adding List Items to an Ordered List:
+
+## Visit page and look for “What you'll learn” section.The section consists of a list of information on what you will be learning in the course. You are required to write a JavaScript program that stores a pre-existing array of list items. On each button click, the program should add a new list item in sequential order. The program should verify if any remaining items are available in the list item array and add the next item to the list accordingly. If no items are left, the function should display a message indicating that all items have been added.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #element_container{
+            background-color: lightcoral;
+            width: 280px;
+            min-height: 60px;
+            border: 2px solid blueviolet;
+            border-radius: 35px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            padding: 20px;
+            margin: auto;
+            margin-top: 120px;
+        }
+
+
+        .message{
+            align-content: center;
+        }
+
+        button{
+            border-color: burlywood;
+            padding: 12px;
+            border-radius: 22px;
+            background-color: #daa2ea;
+
+            color: aliceblue;
+        }
+        button:hover{
+            background-color: blueviolet;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        li{
+            line-height: 25px;
+            background-color: burlywood;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="element_container">
+        <button type="button">Tap to add item.</button>
+    <main>
+        <ol class="container">
+    </main>
+        <!-- Items remaining to be added. -->
+        <h4 class="message"></h4>
+    </ol>
+    </div>
+
+    <script>
+    const learningItems = [
+    "JavaScript fundamentals",
+    "Working with DOM",
+    "Event handling",
+    "Asynchronous JavaScript",
+    "ES6 features"
+];
+
+let counter = 0;
+
+        let ol = document.querySelector(".container");
+        let message = document.querySelector(".message");
+        let btn = document.querySelector("button");
+
+        btn.addEventListener("click" , ()=>{
+            if (counter >= 0 && counter <= 4) {
+                let li = document.createElement("li");
+                li.textContent = learningItems[counter];
+                ol.appendChild(li);
+                counter++;
+            }else {
+                // Show a message when all items have been added
+                message.textContent = "All items have been added.";
+            }
+        })
+
+    </script>
+</body>
+</html>

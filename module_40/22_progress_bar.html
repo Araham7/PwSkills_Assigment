@@ -1,0 +1,68 @@
+<!-- 
+
+# (Q.22). Progress Bar:
+
+## Create a progress bar that fills up as the user scrolls down the page.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Progress Bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* Example long page */
+        }
+
+        /* Progress Bar Container */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #f3f3f3;
+        }
+
+        /* Progress Bar */
+        #progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar HTML -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Example content to scroll -->
+    <div style="padding: 20px;">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat harum sequi architecto ab excepturi at, consequatur sunt quidem aliquid vitae, doloribus qui sed omnis consequuntur soluta fugit obcaecati, animi dolorum. Consectetur dolor quisquam cumque repellat aliquam rem, nobis ducimus. Illum optio at maiores, officia qui reiciendis laborum temporibus blanditiis error vitae unde, itaque voluptate delectus porro? Dignissimos recusandae quas ipsam cumque excepturi, temporibus quae neque, quis nostrum sequi beatae. Officia eum hic facere sequi numquam maiores quod voluptates aspernatur ad molestiae dolores error animi, fugiat esse veniam porro et amet deleniti culpa. Perferendis sit doloribus placeat consequatur! A sit excepturi suscipit tempore quae soluta optio accusantium temporibus at exercitationem. Enim quam vero nulla itaque culpa incidunt! Esse maxime consequuntur labore! Cumque soluta enim, veritatis dolore explicabo quod quo blanditiis, alias nulla nisi molestias rerum debitis ea ut ab minus sit labore! Labore non molestiae illo optio, cumque iure fugit magnam maxime quos, ullam autem nisi corporis! Culpa a porro impedit iste explicabo rerum optio labore enim eveniet sit dolorum, tempore nobis provident nisi ipsum neque sunt laborum earum doloribus magni corporis nostrum, saepe fugiat. Iusto facilis fuga ut labore voluptatem, autem ducimus velit tempore hic incidunt omnis assumenda. Modi aperiam adipisci dolor voluptates at facere aspernatur fuga cupiditate. Commodi blanditiis odio repellendus error dignissimos modi, ratione laborum, voluptatibus possimus consequuntur quis nemo esse id, vel voluptate harum quos quisquam unde similique. Assumenda velit laborum excepturi repudiandae facilis expedita ex, quam dolorem nostrum aperiam accusantium harum molestiae porro earum, culpa quae doloremque delectus officia odio enim ad itaque laudantium quis aliquam? Alias consectetur, ipsum, vel delectus nostrum nam atque saepe similique est in pariatur, voluptates harum esse! Necessitatibus nihil molestiae deserunt ut nostrum deleniti distinctio ullam corporis sint ipsam vel nesciunt non aliquid, eum sunt veritatis sequi veniam iusto et. In vitae nisi quis veritatis nobis eligendi blanditiis libero voluptates similique quo laborum aliquid architecto sint delectus pariatur, possimus molestiae excepturi fugiat modi. Cum nemo atque enim ad blanditiis iure, facilis ipsam odit illo perspiciatis tempora velit quaerat unde aut officia maxime placeat cumque delectus? Nihil nesciunt repudiandae, quo at labore magnam dolorem laboriosam exercitationem iure voluptatem voluptate ad nam minus vero, ipsum officiis ducimus vitae! Obcaecati doloribus suscipit non omnis magni adipisci alias nisi hic laudantium odio, enim porro tempore cupiditate officiis consequuntur architecto ab! Laborum necessitatibus voluptatum error amet nemo recusandae! Cum, fugiat quae laboriosam modi quos laborum.</p>
+    </div>
+
+    <script>
+        // Function to update the progress bar on scroll
+        window.onscroll = function() {
+            scrollProgress();
+        };
+
+        function scrollProgress() {
+            const scrollTop = document.documentElement.scrollTop;  // How far the user has scrolled
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;  // Total scrollable area
+            const scrollPercent = (scrollTop / scrollHeight) * 100;  // Percentage scrolled
+            document.getElementById("progress-bar").style.width = `${scrollPercent}%`;  // Update the progress bar width
+        }
+    </script>
+</body>
+</html>
+
+
