@@ -1261,7 +1261,7 @@ let counter = 0;
 <!-- ```Output -->
 ### solution_video:(click_on_the_image_to_view_the_video_solution)-
 <a href="https://youtube.com/shorts/ZysKqWVLbJY?si=2pdCvJJtRg768yBm">
-  <img src="https://img.youtube.com/vi/ZysKqWVLbJY/0.jpg" width="500px" height="600px" alt="Watch the video" title="Click on the image to view the video solution">
+  <img src="https://img.youtube.com/vi/ZysKqWVLbJY/0.jpg" width="900px" height="550px" alt="Watch the video" title="Click on the image to view the video solution">
 </a>
 <!-- ``` -->
 
