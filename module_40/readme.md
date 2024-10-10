@@ -320,7 +320,7 @@ console.log(uniqueItemCart);
 
 <hr>
 
-# (Q.8). 8. Inverted right-angled triangle pattern with asterisks:
+# (Q.8). Inverted right-angled triangle pattern with asterisks:
 
 ## Write a program that takes an integer input i and prints an inverted right-angled triangle pattern of asteriskswith i rows.
 - Inverted right-angled pattern:
@@ -1267,7 +1267,7 @@ let counter = 0;
 
 <hr>
 
-# (Q.23). Change the color on click:
+# (Q.23). Change the color on click:(click_on_the_image_to_view_the_video_solution)-
 
 ## Create a button that utilizes an array of colors and the Math.random method to change the background color of the page upon clicking.
 
@@ -1354,7 +1354,7 @@ btn.addEventListener("click" , function () {
 
 ### Output:
 <!-- ```Output -->
-###
+### solution_video:(click_on_the_image_to_view_the_video_solution)-
 <a href="https://youtube.com/shorts/XjK3oGWsmE4?si=oTkmra3G-1hm9mX2">
   <img src="https://img.youtube.com/vi/XjK3oGWsmE4/0.jpg" width="900px" height="550px" alt="Watch the video" title="Click on the image to view the video solution">
 </a>
