@@ -1491,8 +1491,8 @@ btn.addEventListener("click" , function () {
 
 ### Output:
 <!-- ```Output -->
-## solution_video:
-<!-- https://youtu.be/I0oL_afU1Ys?si=pLnQlf3LsivXNFKC -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I0oL_afU1Ys" frameborder="0" allowfullscreen></iframe>
-
+## solution_video:(click_on_the_image_to_view_the_video_solution)
+<a href="https://youtu.be/I0oL_afU1Ys?si=pLnQlf3LsivXNFKC">
+  <img src="https://img.youtube.com/vi/I0oL_afU1Ys/0.jpg" width="900px" height="550px" alt="Watch the video" title="click_on_the_image_to_view_the_video_solution">
+</a>
 <!-- ``` -->
