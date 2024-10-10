@@ -7,7 +7,6 @@ Write a program that accepts a list of objects representing books [ title, autho
 */
 
 
-
 // Function to log the book titles in alphabetical order
 const logBookTitlesInAlphabeticalOrder = (titles) => {
     console.log('Book Titles in Alphabetical Order:');
@@ -39,5 +38,6 @@ const bookList = [
 
 // Calling the function to extract and log book titles
 extractAndLogBookTitles(bookList);
+
 
 
